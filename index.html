@@ -102,7 +102,7 @@
                             <img src="images/gallery/thumbs/01.jpg" alt="" />
                         </a>
                         <a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center">
-                            <img style="max-width:100%;max-height:100%;" src="RSS/depthy/Zoeie.gif" alt="" />
+                            <img style="max-width:100%;max-height:100%;" id="imgDino" src="RSS/depthy/OG.jpg" alt="" />
 
                         </a>
                         <a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5 " data-position="bottom">
@@ -449,6 +449,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+        $(function() {
+            $("#imgDino").hover(
+                function() {
+                    $(this).attr("src", "RSS/depthy/Zoeie.gif");
+                },
+                function() {
+                    $(this).attr("src", "RSS/depthy/OG.jpg");
+                }
+            );
+        });
+    </script>
 
 </body>
 
